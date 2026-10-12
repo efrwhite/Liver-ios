@@ -24,12 +24,14 @@ struct LoginPageView: View {
                     TextField(
                         NSLocalizedString("enterEmailHint", comment: ""),
                         text: $email
-                    ) .textFieldStyle(RoundedBorderTextFieldStyle())
+                    ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
+                                        // TODO: Avoid hardcoding red. Make error color asset?
+                                      OutlinedTextFieldStyle(outlineColor: .red))
                     Text(NSLocalizedString("password", comment: ""))
                     TextField(
                         NSLocalizedString("enterPasswordHint", comment: ""),
                         text: $password
-                    ) .textFieldStyle(RoundedBorderTextFieldStyle())
+                    ) .textFieldStyle(OutlinedTextFieldStyle())
 // TODO: Button, link, or NavigationLink? Ask for Forgot Password behavior details
                     Text(NSLocalizedString("forgotPassword", comment: ""))
                     Button(action: {}) {

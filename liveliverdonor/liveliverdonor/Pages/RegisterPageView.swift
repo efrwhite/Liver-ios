@@ -1,5 +1,5 @@
 //
-//  RegisterPageView.swift
+//  GetStartedPageView.swift
 //  liveliverdonor
 //
 //  Created by Kel on 9/20/26.
@@ -9,17 +9,14 @@ import SwiftUI
 
 struct RegisterPageView: View {
     var body: some View {
+        
         NavigationView {
             ZStack {
                 Color(.background)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    Image(systemName: "globe")
-                        .imageScale(.large)
-                        .foregroundStyle(.tint)
-                    Text("Hello, world!")
+                    Text("Hello world")
                 }
-                .padding()
             }
         }
     }
@@ -27,4 +24,5 @@ struct RegisterPageView: View {
 
 #Preview {
     RegisterPageView()
+        .environment(\.colorScheme, .light)
 }
