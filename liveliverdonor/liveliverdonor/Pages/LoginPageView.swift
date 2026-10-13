@@ -14,7 +14,7 @@ struct LoginPageView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.background)
+                Color(.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text(NSLocalizedString("loginTitle", comment: ""))
@@ -24,12 +24,13 @@ struct LoginPageView: View {
                     TextField(
                         NSLocalizedString("enterEmailHint", comment: ""),
                         text: $email
-                    ) .textFieldStyle(RoundedBorderTextFieldStyle())
+                    ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
+                                      OutlinedTextFieldStyle(outlineColor: Color.error))
                     Text(NSLocalizedString("password", comment: ""))
                     TextField(
                         NSLocalizedString("enterPasswordHint", comment: ""),
                         text: $password
-                    ) .textFieldStyle(RoundedBorderTextFieldStyle())
+                    ) .textFieldStyle(OutlinedTextFieldStyle())
 // TODO: Button, link, or NavigationLink? Ask for Forgot Password behavior details
                     Text(NSLocalizedString("forgotPassword", comment: ""))
                     Button(action: {}) {
@@ -37,11 +38,11 @@ struct LoginPageView: View {
                     }.buttonStyle(ButtonStyleFilled())
                     HStack{
                         VStack{
-                            Divider().overlay(.foreground)
+                            Divider().overlay(Color.disabledSecondary)
                         }
                         Text(NSLocalizedString("or", comment: ""))
                         VStack{
-                            Divider().overlay(.foreground)
+                            Divider().overlay(Color.disabledSecondary)
                         }
                     }
 // Remove button text hardcoding? Titles may be included in SSO, look into it
