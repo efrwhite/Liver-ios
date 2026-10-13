@@ -12,7 +12,7 @@ struct GetStartedPageView: View {
         
         NavigationView {
             ZStack {
-                Color(.background)
+                Color(.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text(NSLocalizedString("learnMore", comment: ""))

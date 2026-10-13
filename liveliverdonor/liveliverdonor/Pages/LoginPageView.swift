@@ -14,7 +14,7 @@ struct LoginPageView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.background)
+                Color(.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text(NSLocalizedString("loginTitle", comment: ""))
@@ -25,8 +25,7 @@ struct LoginPageView: View {
                         NSLocalizedString("enterEmailHint", comment: ""),
                         text: $email
                     ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
-                                        // TODO: Avoid hardcoding red. Make error color asset?
-                                      OutlinedTextFieldStyle(outlineColor: .red))
+                                      OutlinedTextFieldStyle(outlineColor: Color.error))
                     Text(NSLocalizedString("password", comment: ""))
                     TextField(
                         NSLocalizedString("enterPasswordHint", comment: ""),
@@ -39,11 +38,11 @@ struct LoginPageView: View {
                     }.buttonStyle(ButtonStyleFilled())
                     HStack{
                         VStack{
-                            Divider().overlay(.foreground)
+                            Divider().overlay(Color.disabledSecondary)
                         }
                         Text(NSLocalizedString("or", comment: ""))
                         VStack{
-                            Divider().overlay(.foreground)
+                            Divider().overlay(Color.disabledSecondary)
                         }
                     }
 // Remove button text hardcoding? Titles may be included in SSO, look into it

@@ -12,7 +12,7 @@ struct RegisterPageView: View {
         
         NavigationView {
             ZStack {
-                Color(.background)
+                Color(Color.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text("Hello world")

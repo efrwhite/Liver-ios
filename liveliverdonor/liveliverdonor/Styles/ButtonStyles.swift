@@ -15,7 +15,7 @@ struct ButtonStyleOutlined: ButtonStyle {
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(
-                        .accent, lineWidth: 2))
+                        Color.backgroundSecondary, lineWidth: 2))
     }
 }
 
@@ -23,8 +23,8 @@ struct ButtonStyleFilled: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding(10)
-            .background(.accent)
-            .foregroundColor(.white)
+            .background(Color.backgroundSecondary)
+            .foregroundColor(Color.backgroundTertiary)
             .cornerRadius(20)
     }
 }
