@@ -1,6 +1,28 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "confirmPassword" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm Password"
+          }
+        }
+      }
+    },
+    "createAccount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create Account"
+          }
+        }
+      }
+    },
     "email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -34,6 +56,28 @@
         }
       }
     },
+    "firstName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "First Name"
+          }
+        }
+      }
+    },
+    "firstNamePlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "John"
+          }
+        }
+      }
+    },
     "forgotPassword" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -45,13 +89,24 @@
         }
       }
     },
-    "learnMore" : {
+    "lastName" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Learn more about becoming a donor"
+            "value" : "Last Name"
+          }
+        }
+      }
+    },
+    "lastNamePlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doe"
           }
         }
       }
@@ -63,28 +118,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Login"
-          }
-        }
-      }
-    },
-    "loginSubtitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sign in to the liver transplant program app"
-          }
-        }
-      }
-    },
-    "loginTitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Welcome back"
           }
         }
       }
@@ -118,6 +151,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Register"
+          }
+        }
+      }
+    },
+    "termsAndPolicy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By continuing, you agree to our [Terms of Service](https://TODO.com) and [Privacy Policy](https://TODO.com)."
           }
         }
       }

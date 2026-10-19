@@ -13,6 +13,7 @@ struct OutlinedTextFieldStyle: TextFieldStyle {
     
     func _body(configuration: TextField<Self._Label>) -> some View {
             configuration
+            .frame(height: 10)
         .padding()
         .background(Color.backgroundTertiary)
         .cornerRadius(8)
