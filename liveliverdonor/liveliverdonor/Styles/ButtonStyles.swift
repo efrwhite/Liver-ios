@@ -10,6 +10,7 @@ import SwiftUI
 struct ButtonStyleOutlined: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
+            .frame(maxWidth: .infinity)
             .padding(10)
             .cornerRadius(20)
             .overlay(
@@ -22,6 +23,7 @@ struct ButtonStyleOutlined: ButtonStyle {
 struct ButtonStyleFilled: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
+            .frame(maxWidth: .infinity)
             .padding(10)
             .background(Color.backgroundSecondary)
             .foregroundColor(Color.backgroundTertiary)

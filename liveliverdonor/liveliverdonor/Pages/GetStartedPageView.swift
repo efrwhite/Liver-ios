@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct GetStartedPageView: View {
+    var largeSpace: CGFloat = 40
+    var mediumSpace: CGFloat = 10
+    
     var body: some View {
-        
         NavigationView {
             ZStack {
                 Color(.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    Text(NSLocalizedString("learnMore", comment: ""))
-                    HStack {
+                    HStack(spacing: mediumSpace) {
                         NavigationLink(destination: RegisterPageView()) {
                             Text(NSLocalizedString("register", comment: ""))
                         }
@@ -26,7 +27,7 @@ struct GetStartedPageView: View {
                         }
                         .buttonStyle(ButtonStyleFilled())
                     }
-                }
+                }.padding(largeSpace);
             }
         }
     }
