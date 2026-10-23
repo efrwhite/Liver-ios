@@ -12,6 +12,15 @@
         }
       }
     },
+    "Continue with Apple" : {
+
+    },
+    "Continue with Facebook" : {
+
+    },
+    "Continue with Google" : {
+
+    },
     "createAccount" : {
       "extractionState" : "manual",
       "localizations" : {
