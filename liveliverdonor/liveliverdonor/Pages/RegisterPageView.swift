@@ -13,12 +13,6 @@ struct RegisterPageView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     
-    // Medium spaces have 5 vertical spacing
-    // Large spaces have 40 vertical spacing
-    // Otherwise leave at default spacing value
-    var largeSpace: CGFloat = 40
-    var mediumSpace: CGFloat = 10
-    
     var body: some View {
         
         NavigationView {
@@ -49,15 +43,15 @@ struct RegisterPageView: View {
                                     text: $lastName
                                 ) .textFieldStyle(OutlinedTextFieldStyle())
                             }
-                        }.padding([.top], largeSpace)
-                        Text(NSLocalizedString("email", comment: "")).padding([.top], mediumSpace)
+                        }.padding([.top], AppConfiguration.largeSpace)
+                        Text(NSLocalizedString("email", comment: "")).padding([.top], AppConfiguration.mediumSpace)
                         TextField(
                             NSLocalizedString("enterEmailHint", comment: ""),
                             text: $email
                         ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
                                             OutlinedTextFieldStyle(outlineColor: Color.error))
                         // TODO: Add password icon and behavior
-                        Text(NSLocalizedString("password", comment: "")).padding([.top], mediumSpace)
+                        Text(NSLocalizedString("password", comment: "")).padding([.top], AppConfiguration.mediumSpace)
                         TextField(
                             NSLocalizedString("enterPasswordHint", comment: ""),
                             text: $password
@@ -70,11 +64,11 @@ struct RegisterPageView: View {
                     }
                         Button(action: {}) {
                             Text(NSLocalizedString("createAccount", comment: ""))
-                        }.buttonStyle(ButtonStyleFilled()).padding([.top], largeSpace)
+                        }.buttonStyle(ButtonStyleFilled()).padding([.top], AppConfiguration.largeSpace)
                         // TODO: Change terms/policy link appearance?
                         // https://stackoverflow.com/questions/78525619/how-to-style-markdown-elements-in-swiftui
-                        Text(LocalizedStringKey(NSLocalizedString("termsAndPolicy", comment: "")))        .padding([.top], mediumSpace)
-                    }.padding(largeSpace);
+                    Text(LocalizedStringKey(NSLocalizedString("termsAndPolicy", comment: "")))        .padding([.top], AppConfiguration.mediumSpace)
+                }.padding(AppConfiguration.largeSpace);
             }
         }
     }

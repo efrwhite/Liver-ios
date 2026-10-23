@@ -11,10 +11,6 @@ struct LoginPageView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     
-    var smallSpace: CGFloat = 5
-    var largeSpace: CGFloat = 40
-    var mediumSpace: CGFloat = 10
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -23,13 +19,13 @@ struct LoginPageView: View {
                 VStack {
                     Text(NSLocalizedString("login", comment: "")).font(.title).fontWeight(.bold)
                     VStack(alignment: .leading) {
-                        Text(NSLocalizedString("email", comment: "")).padding([.top], largeSpace)
+                        Text(NSLocalizedString("email", comment: "")).padding([.top], AppConfiguration.largeSpace)
                         TextField(
                             NSLocalizedString("enterEmailHint", comment: ""),
                             text: $email
                         ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
                                             OutlinedTextFieldStyle(outlineColor: Color.error))
-                        Text(NSLocalizedString("password", comment: "")).padding([.top], mediumSpace)
+                        Text(NSLocalizedString("password", comment: "")).padding([.top], AppConfiguration.mediumSpace)
                         TextField(
                             NSLocalizedString("enterPasswordHint", comment: ""),
                             text: $password
@@ -41,7 +37,7 @@ struct LoginPageView: View {
                         }
                         Button(action: {}) {
                             Text(NSLocalizedString("login", comment: ""))
-                        }.buttonStyle(ButtonStyleFilled()).padding([.top], largeSpace)
+                        }.buttonStyle(ButtonStyleFilled()).padding([.top], AppConfiguration.largeSpace)
                         HStack{
                             VStack{
                                 Divider().frame(height: 2).overlay(Color.backgroundSecondary)
@@ -50,21 +46,21 @@ struct LoginPageView: View {
                             VStack{
                                 Divider().frame(height: 2).overlay(Color.backgroundSecondary)
                             }
-                        }.padding([.top], mediumSpace)
+                        }.padding([.top], AppConfiguration.mediumSpace)
                         // Remove button text hardcoding? Titles may be included in SSO, look into it
                         Button(action: {}) {
                             Text("Continue with Apple")
-                        }.buttonStyle(ButtonStyleOutlined()).padding([.top], mediumSpace)
+                        }.buttonStyle(ButtonStyleOutlined()).padding([.top], AppConfiguration.mediumSpace)
                         Button(action: {}) {
                             Text("Continue with Google")
-                        }.buttonStyle(ButtonStyleOutlined()).buttonStyle(ButtonStyleOutlined()).padding([.top], smallSpace)
+                        }.buttonStyle(ButtonStyleOutlined()).buttonStyle(ButtonStyleOutlined()).padding([.top], AppConfiguration.smallSpace)
                         Button(action: {}) {
                             Text("Continue with Facebook")
-                        }.buttonStyle(ButtonStyleOutlined()).padding([.top], smallSpace)
+                        }.buttonStyle(ButtonStyleOutlined()).padding([.top], AppConfiguration.smallSpace)
                         
                     }
                 }
-                .padding(largeSpace);
+                .padding(AppConfiguration.largeSpace);
             }
         }
     }
