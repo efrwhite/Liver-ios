@@ -14,7 +14,10 @@ struct GetStartedPageView: View {
             ZStack {
                 Color(.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
-                VStack {
+                VStack(spacing: AppConfiguration.largeSpace) {
+                    // TODO logo here
+                    Text(NSLocalizedString("learnMore", comment: "")).font(.headline)
+                        .modifier(PanelStyleFilled())
                     HStack(spacing: AppConfiguration.mediumSpace) {
                         NavigationLink(destination: RegisterPageView()) {
                             Text(NSLocalizedString("register", comment: ""))

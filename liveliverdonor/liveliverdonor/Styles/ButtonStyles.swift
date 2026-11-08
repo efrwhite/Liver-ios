@@ -12,9 +12,10 @@ struct ButtonStyleOutlined: ButtonStyle {
         configuration.label
             .frame(maxWidth: .infinity)
             .padding(10)
-            .cornerRadius(20)
+            .cornerRadius(AppConfiguration.largeRadius)
+            .foregroundStyle(Color.backgroundSecondary)
             .overlay(
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: AppConfiguration.largeRadius)
                     .stroke(
                         Color.backgroundSecondary, lineWidth: 2))
     }
@@ -26,7 +27,7 @@ struct ButtonStyleFilled: ButtonStyle {
             .frame(maxWidth: .infinity)
             .padding(10)
             .background(Color.backgroundSecondary)
-            .foregroundColor(Color.backgroundTertiary)
-            .cornerRadius(20)
+            .foregroundColor(Color.backgroundPrimary)
+            .cornerRadius(AppConfiguration.largeRadius)
     }
 }

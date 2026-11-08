@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OutlinedTextFieldStyle: TextFieldStyle {
     
-    var outlineColor: Color = Color.disabledSecondary
+    var outlineColor: Color = Color.disabled
     
     func _body(configuration: TextField<Self._Label>) -> some View {
             configuration

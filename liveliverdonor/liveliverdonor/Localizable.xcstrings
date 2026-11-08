@@ -120,6 +120,17 @@
         }
       }
     },
+    "learnMore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn more about becoming a donor"
+          }
+        }
+      }
+    },
     "login" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -164,6 +175,17 @@
         }
       }
     },
+    "signInTo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in to the liver transplant program app"
+          }
+        }
+      }
+    },
     "termsAndPolicy" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -171,6 +193,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "By continuing, you agree to our [Terms of Service](https://TODO.com) and [Privacy Policy](https://TODO.com)."
+          }
+        }
+      }
+    },
+    "welcomeBack" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome back"
           }
         }
       }
