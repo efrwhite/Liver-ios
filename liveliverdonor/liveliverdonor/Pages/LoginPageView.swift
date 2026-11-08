@@ -16,28 +16,40 @@ struct LoginPageView: View {
             ZStack {
                 Color(.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
-                VStack {
-                    Text(NSLocalizedString("login", comment: "")).font(.title).fontWeight(.bold)
-                    VStack(alignment: .leading) {
-                        Text(NSLocalizedString("email", comment: "")).padding([.top], AppConfiguration.largeSpace)
-                        TextField(
-                            NSLocalizedString("enterEmailHint", comment: ""),
-                            text: $email
-                        ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
-                                            OutlinedTextFieldStyle(outlineColor: Color.error))
-                        Text(NSLocalizedString("password", comment: "")).padding([.top], AppConfiguration.mediumSpace)
-                        TextField(
-                            NSLocalizedString("enterPasswordHint", comment: ""),
-                            text: $password
-                        ) .textFieldStyle(OutlinedTextFieldStyle())
-                        // TODO: Forgot Password behavior and appearance
-                        HStack {
-                            Spacer()
-                            Text(NSLocalizedString("forgotPassword", comment: ""))
+                VStack(spacing: AppConfiguration.largeSpace)
+                {
+                    VStack{
+                        Text(NSLocalizedString("welcomeBack", comment: "")).font(.headline)
+                        Text(NSLocalizedString("signInTo", comment: ""))
+                        Spacer()
+                            .frame(height: AppConfiguration.mediumSpace)
+                        Text(NSLocalizedString("login", comment: "")).font(.title).fontWeight(.bold)
+                    }
+                    VStack(alignment: .leading, spacing: AppConfiguration.mediumSpace) {
+                        VStack(alignment: .leading, spacing: AppConfiguration.smallSpace) {
+                            Text(NSLocalizedString("email", comment: ""))
+                            TextField(
+                                NSLocalizedString("enterEmailHint", comment: ""),
+                                text: $email
+                            ) .textFieldStyle(email.isValidEmail ?  OutlinedTextFieldStyle() :
+                                                OutlinedTextFieldStyle(outlineColor: Color.error))
+                        }
+                        VStack(alignment: .leading, spacing: AppConfiguration.smallSpace) {
+                            Text(NSLocalizedString("password", comment: ""))
+                            TextField(
+                                NSLocalizedString("enterPasswordHint", comment: ""),
+                                text: $password
+                            ) .textFieldStyle(OutlinedTextFieldStyle())
+                            HStack {
+                                Spacer()
+                                Text(NSLocalizedString("forgotPassword", comment: ""))
+                            }
                         }
                         Button(action: {}) {
                             Text(NSLocalizedString("login", comment: ""))
-                        }.buttonStyle(ButtonStyleFilled()).padding([.top], AppConfiguration.largeSpace)
+                        }.buttonStyle(ButtonStyleFilled())
+                    }
+                        VStack(spacing: AppConfiguration.mediumSpace) {
                         HStack{
                             VStack{
                                 Divider().frame(height: 2).overlay(Color.backgroundSecondary)
@@ -46,18 +58,16 @@ struct LoginPageView: View {
                             VStack{
                                 Divider().frame(height: 2).overlay(Color.backgroundSecondary)
                             }
-                        }.padding([.top], AppConfiguration.mediumSpace)
-                        // Remove button text hardcoding? Titles may be included in SSO, look into it
-                        Button(action: {}) {
-                            Text("Continue with Apple")
-                        }.buttonStyle(ButtonStyleOutlined()).padding([.top], AppConfiguration.mediumSpace)
-                        Button(action: {}) {
-                            Text("Continue with Google")
-                        }.buttonStyle(ButtonStyleOutlined()).buttonStyle(ButtonStyleOutlined()).padding([.top], AppConfiguration.smallSpace)
-                        Button(action: {}) {
-                            Text("Continue with Facebook")
-                        }.buttonStyle(ButtonStyleOutlined()).padding([.top], AppConfiguration.smallSpace)
-                        
+                        }
+                            Button(action: {}) {
+                                Text("Continue with Apple")
+                            }.buttonStyle(ButtonStyleOutlined())
+                            Button(action: {}) {
+                                Text("Continue with Google")
+                            }.buttonStyle(ButtonStyleOutlined()).buttonStyle(ButtonStyleOutlined())
+                            Button(action: {}) {
+                                Text("Continue with Facebook")
+                            }.buttonStyle(ButtonStyleOutlined())
                     }
                 }
                 .padding(AppConfiguration.largeSpace);

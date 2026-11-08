@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AppConfiguration {
     static let smallSpace: CGFloat = 5
+    static let mediumSpace: CGFloat = 15
     static let largeSpace: CGFloat = 40
-    static let mediumSpace: CGFloat = 10
+    static let smallRadius: CGFloat = 8
+    static let mediumRadius: CGFloat = 12
+    static let largeRadius: CGFloat = 20
 }
