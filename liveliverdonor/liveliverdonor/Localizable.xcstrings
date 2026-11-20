@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "checkEligibility" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check eligibility"
+          }
+        }
+      }
+    },
     "confirmPassword" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -32,6 +43,28 @@
         }
       }
     },
+    "directedDonation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Directed donation"
+          }
+        }
+      }
+    },
+    "directedDonationExplanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You donate to a specific person you know: a family member, friend, or acquaintance who needs a transplant."
+          }
+        }
+      }
+    },
     "email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -39,6 +72,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Email"
+          }
+        }
+      }
+    },
+    "emailValidationError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "enter a valid email address"
           }
         }
       }
@@ -61,6 +105,39 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enter your password"
+          }
+        }
+      }
+    },
+    "evaluationProcess" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The evaluation process"
+          }
+        }
+      }
+    },
+    "everyDonorCompletes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every donor completes a full evaluation before surgery, so we only move forward when it's safe for you. This also gives the recipient a strong chance of success."
+          }
+        }
+      }
+    },
+    "everyDonorGoes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every donor goes through the same five phases, so we're confident it's safe for you before anything moves forward."
           }
         }
       }
@@ -98,6 +175,17 @@
         }
       }
     },
+    "home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
+    },
     "lastName" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -116,6 +204,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doe"
+          }
+        }
+      }
+    },
+    "learnAbout" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn about the process"
           }
         }
       }
@@ -142,6 +241,61 @@
         }
       }
     },
+    "moreThanOnePath" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There's more than one path to becoming a donor. Tap each to learn more."
+          }
+        }
+      }
+    },
+    "nextSurgery" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next: Your Surgery"
+          }
+        }
+      }
+    },
+    "nonDirected" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non-directed donation"
+          }
+        }
+      }
+    },
+    "nonDirectedExplanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You donate anonymously to whoever is highest on the wait list and the best match. You may never meet them."
+          }
+        }
+      }
+    },
+    "notSure" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not sure which fits you? You can decide later in the process."
+          }
+        }
+      }
+    },
     "or" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -164,6 +318,138 @@
         }
       }
     },
+    "passwordMatchError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "passwords should match"
+          }
+        }
+      }
+    },
+    "passwordValidationError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "must contain 8 char."
+          }
+        }
+      }
+    },
+    "phase1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Online screening questionnaire"
+          }
+        }
+      }
+    },
+    "phase1Explanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A basic check of your health history"
+          }
+        }
+      }
+    },
+    "phase2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Meet your donor advocate"
+          }
+        }
+      }
+    },
+    "phase2Explanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Independent Living Donor Advocate (ILDA) supports you, separate from the recipient's care team, to make sure your decision is fully your own"
+          }
+        }
+      }
+    },
+    "phase3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Blood work & initial diagnostics"
+          }
+        }
+      }
+    },
+    "phase3Explanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blood type match, liver function, general health"
+          }
+        }
+      }
+    },
+    "phase4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4. Imaging & specialized tests"
+          }
+        }
+      }
+    },
+    "phase4Explanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CT/MRI scans map your liver's anatomy"
+          }
+        }
+      }
+    },
+    "phase5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5. Multidisciplinary team meeting"
+          }
+        }
+      }
+    },
+    "phase5Explanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Social worker, nutrition, nurse coordinator, hepatologist & surgeon"
+          }
+        }
+      }
+    },
     "register" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -171,6 +457,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Register"
+          }
+        }
+      }
+    },
+    "roboticSurgery" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We use robotic surgery, when appropriate. Smaller incisions can mean less scarring and a smoother recovery for many donors. "
           }
         }
       }
@@ -197,6 +494,28 @@
         }
       }
     },
+    "twoWays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Directed donation"
+          }
+        }
+      }
+    },
+    "welcome" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome!"
+          }
+        }
+      }
+    },
     "welcomeBack" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -204,6 +523,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Welcome back"
+          }
+        }
+      }
+    },
+    "whyDonate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Why donate?"
+          }
+        }
+      }
+    },
+    "whyDonateExplanation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A living donor's liver grows back to full function within weeks. Donating can save a life with minimal long-term impacts on your own health.\n"
           }
         }
       }
