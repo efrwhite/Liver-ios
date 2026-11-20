@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Juy-qm-aP2">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hIz-Zj-o3I">
+                                <rect key="frame" x="40" y="108" width="313" height="636"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="eLg-fD-6df"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hIz-Zj-o3I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="4gB-6F-RwP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hIz-Zj-o3I" secondAttribute="trailing" constant="40" id="EHd-ot-YzQ"/>
+                            <constraint firstItem="Juy-qm-aP2" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="Gl4-rl-DBP"/>
+                            <constraint firstItem="hIz-Zj-o3I" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="40" id="NjN-mX-hdL"/>
+                            <constraint firstItem="hIz-Zj-o3I" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="OyO-nQ-HlV"/>
+                            <constraint firstItem="Juy-qm-aP2" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="QNG-aZ-foC"/>
+                            <constraint firstAttribute="bottom" secondItem="Juy-qm-aP2" secondAttribute="bottom" id="TP1-C9-Edo"/>
+                            <constraint firstItem="Juy-qm-aP2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Ze8-rP-wLk"/>
+                            <constraint firstItem="hIz-Zj-o3I" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oAD-xx-QFC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hIz-Zj-o3I" secondAttribute="bottom" constant="40" id="sTN-Ze-2KR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60.465116279069768" y="121.65697674418604"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient" width="56" height="956"/>
+        <image name="Logo" width="600" height="788"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

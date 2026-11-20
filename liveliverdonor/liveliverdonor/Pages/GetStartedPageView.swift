@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct GetStartedPageView: View {
-    
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.backgroundPrimary)
+                Color(Color.backgroundPrimary)
                     .edgesIgnoringSafeArea(.all)
                 VStack(spacing: AppConfiguration.largeSpace) {
-                    // TODO logo here
+                    Image("Logo").resizable().aspectRatio(contentMode: .fit).padding(AppConfiguration.mediumSpace)
+                    Spacer().frame(height: AppConfiguration.largeSpace)
                     Text(NSLocalizedString("learnMore", comment: "")).font(.headline)
                         .modifier(PanelStyleFilled())
                     HStack(spacing: AppConfiguration.mediumSpace) {
@@ -30,7 +30,7 @@ struct GetStartedPageView: View {
                     }
                 }.padding(AppConfiguration.largeSpace);
             }
-        }
+        }.foregroundColor(Color.onBackground)
     }
 }
 
